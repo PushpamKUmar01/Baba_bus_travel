@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baba bus travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Baba bus travel</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showHome()">Home</a></li>
+                <li><a href="#" onclick="showContact()">Contact</a></li>
+                <li><a href="#" onclick="showBuses()">Buses</a></li>
+                <li><a href="#" onclick="showYourTicket()">Your Ticket</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section">
+            <h2>Welcome to the Baba bus travel </h2>
+            <p>Select a bus and book your seat conveniently!</p>
+            <div id="home-bus-list">
+                <!-- Bus details will be populated here by JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact Us</h2>
+            <p>Email: support@busbooking.com</p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+        
+        <!-- Buses Section -->
+        <section id="buses" class="content-section">
+            <h2>Available Buses</h2>
+            <div id="bus-list">
+                <!-- Bus list will be populated here by JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Ticket Section -->
+        <section id="your-ticket" class="content-section">
+            <h2>Your Ticket</h2>
+            <div id="ticket-details">
+                <!-- Ticket details will be shown here after booking -->
+            </div>
+        </section>
+
+        <!------promotion-area---------->
+      <div class="promotion-area">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/ads1.jpeg" alt="Promotion Image 1" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/ads2.jpeg" alt="Promotion Image 2" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/ads3.jpeg" alt="Promotion Image 1" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/ads4.jpeg" alt="Promotion Image 2" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/ads5.jpeg" alt="Promotion Image 2" />
+          </div>
+
+          <!-- Add more images here -->
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <!-- Add more dots for additional images -->
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="developer-info">
+                <p>Developed by: Pushpam Kumar</p>
+                <p>Github: <a href="https://github.com/PushpamKUmar01">yourgithubid</a></p>
+                <p>Email: wdpushpamkumar@gmail.com</p>
+                <p>Instagram: <a href="https://www.instagram.com/pushpam_pandit?utm_source=qr&igsh=eDRlajJzNnY4em04">yourinstaid</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

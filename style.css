@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content-section {
+    display: none;
+    padding: 2em;
+}
+
+#main-content {
+    padding: 1em;
+}
+
+#ticket-details {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+#bus-list, #home-bus-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.bus {
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.bus img {
+    width: 100%;
+    height: auto;
+}
+
+.bus button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.bus button:hover {
+    background-color: #45a049;
+}
+
+/*footer*/
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.developer-info p {
+    margin: 5px 0;
+}
+
+.developer-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    header, nav ul {
+        text-align: center;
+    }
+
+    .bus {
+        width: 100%;
+    }
+}
+
+
+/*-------promotion-area--------*/
+.promotion-area {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+
